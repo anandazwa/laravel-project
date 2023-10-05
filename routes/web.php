@@ -2,7 +2,7 @@
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\NewsController;
+use App\http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +27,5 @@ Route::get('register', function() {echo'register';
 
 Route::get('/show', [NewsController::class, 'show']);
 Route::get('/create', [NewsController::class, 'create']);
+
+route::get('registerController',[RegisterController::class,'index']);
